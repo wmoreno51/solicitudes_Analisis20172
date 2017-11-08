@@ -284,7 +284,7 @@ public class registrarInvestigador extends javax.swing.JInternalFrame {
         String direccion = txtDireccion.getText();
         int telefono = Integer.parseInt(txtTelefono.getText());
         
-        JOptionPane.showMessageDialog(this, "numero= "+telefono);
+        JOptionPane.showMessageDialog(this, "numero= "+telefono+"hola");
     }//GEN-LAST:event_btnRegistrarActionPerformed
 
 
