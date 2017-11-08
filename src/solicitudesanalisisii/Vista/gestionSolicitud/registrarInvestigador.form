@@ -4,7 +4,7 @@
   <Properties>
     <Property name="title" type="java.lang.String" value="Registrar Investigador"/>
     <Property name="frameIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-      <Image iconType="3" name="/solicitudesanalisisii/Imagenes/formulario.png"/>
+      <Image iconType="0" name="null"/>
     </Property>
   </Properties>
   <SyntheticProperties>
@@ -47,7 +47,7 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="jLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -61,11 +61,12 @@
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace min="-2" pref="58" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="txtNombre" alignment="0" min="-2" pref="236" max="-2" attributes="0"/>
+                                      <Component id="txtNombre" alignment="1" min="-2" pref="236" max="-2" attributes="0"/>
                                       <Component id="txtApellido" min="-2" pref="236" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
+                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
@@ -77,7 +78,7 @@
                           </Group>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="cBoxTipoDocumento" pref="0" max="32767" attributes="0"/>
+                              <Component id="cBoxTipoDocumento" max="32767" attributes="0"/>
                               <Component id="txtDocumento" max="32767" attributes="0"/>
                               <Component id="txtCorreo" max="32767" attributes="0"/>
                               <Component id="txtDireccion" max="32767" attributes="0"/>
@@ -90,7 +91,7 @@
                           <Component id="btnRegistrar" min="-2" pref="104" max="-2" attributes="0"/>
                       </Group>
                   </Group>
-                  <EmptySpace pref="57" max="32767" attributes="0"/>
+                  <EmptySpace min="-2" pref="57" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>

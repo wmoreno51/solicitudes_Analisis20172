@@ -1,22 +1,13 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package solicitudesanalisisii.Vista.gestionSolicitud;
 
 import java.awt.event.KeyEvent;
 import javax.swing.JOptionPane;
+import solicitudesanalisisii.Modelo.Investigador;
 
-/**
- *
- * @author wilmer.moreno
- */
 public class registrarInvestigador extends javax.swing.JInternalFrame {
 
-    /**
-     * Creates new form registrarInvestigador
-     */
+    Investigador investigador;
+    
     public registrarInvestigador() {
         initComponents();
     }
@@ -50,7 +41,7 @@ public class registrarInvestigador extends javax.swing.JInternalFrame {
         btnRegistrar = new javax.swing.JButton();
 
         setTitle("Registrar Investigador");
-        setFrameIcon(new javax.swing.ImageIcon(getClass().getResource("/solicitudesanalisisii/Imagenes/formulario.png"))); // NOI18N
+        setFrameIcon(null);
 
         jPanel1.setBackground(new java.awt.Color(254, 254, 254));
 
@@ -107,11 +98,11 @@ public class registrarInvestigador extends javax.swing.JInternalFrame {
         jLabel8.setText("Telefono:");
 
         txtTelefono.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyTyped(java.awt.event.KeyEvent evt) {
-                txtTelefonoKeyTyped(evt);
-            }
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 txtTelefonoKeyPressed(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtTelefonoKeyTyped(evt);
             }
         });
 
@@ -139,7 +130,7 @@ public class registrarInvestigador extends javax.swing.JInternalFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(38, 38, 38)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel2)
@@ -151,8 +142,9 @@ public class registrarInvestigador extends javax.swing.JInternalFrame {
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGap(58, 58, 58)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(txtApellido, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                    .addComponent(txtNombre, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtApellido, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel4)
@@ -162,7 +154,7 @@ public class registrarInvestigador extends javax.swing.JInternalFrame {
                             .addComponent(jLabel8))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(cBoxTipoDocumento, 0, 1, Short.MAX_VALUE)
+                            .addComponent(cBoxTipoDocumento, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(txtDocumento)
                             .addComponent(txtCorreo)
                             .addComponent(txtDireccion)
@@ -171,7 +163,7 @@ public class registrarInvestigador extends javax.swing.JInternalFrame {
                         .addComponent(btnCancelar, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(btnRegistrar, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(57, Short.MAX_VALUE))
+                .addGap(57, 57, 57))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -284,7 +276,15 @@ public class registrarInvestigador extends javax.swing.JInternalFrame {
     }//GEN-LAST:event_txtTelefonoKeyPressed
 
     private void btnRegistrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegistrarActionPerformed
-        
+        /*String nombre = txtNombre.getText();
+        String apellido = txtApellido.getText();
+        String tipoDocumento = String.valueOf(cBoxTipoDocumento.getSelectedItem());
+        int documento = Integer.parseInt(txtDocumento.getText());
+        String correo = txtCorreo.getText();
+        String direccion = txtDireccion.getText();
+        int telefono = Integer.parseInt(txtTelefono.getText());
+        */
+        JOptionPane.showMessageDialog(this, "numero= ");
     }//GEN-LAST:event_btnRegistrarActionPerformed
 
 
