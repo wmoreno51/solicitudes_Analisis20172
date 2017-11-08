@@ -276,15 +276,15 @@ public class registrarInvestigador extends javax.swing.JInternalFrame {
     }//GEN-LAST:event_txtTelefonoKeyPressed
 
     private void btnRegistrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegistrarActionPerformed
-        /*String nombre = txtNombre.getText();
+        String nombre = txtNombre.getText();
         String apellido = txtApellido.getText();
         String tipoDocumento = String.valueOf(cBoxTipoDocumento.getSelectedItem());
         int documento = Integer.parseInt(txtDocumento.getText());
         String correo = txtCorreo.getText();
         String direccion = txtDireccion.getText();
         int telefono = Integer.parseInt(txtTelefono.getText());
-        */
-        JOptionPane.showMessageDialog(this, "numero= ");
+        
+        JOptionPane.showMessageDialog(this, "numero= "+telefono);
     }//GEN-LAST:event_btnRegistrarActionPerformed
 
 
